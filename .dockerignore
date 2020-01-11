@@ -1,0 +1,4 @@
+# Ignore host or derived directories and any secrets
+.git
+.cache
+log/*
