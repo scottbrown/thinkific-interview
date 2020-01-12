@@ -16,7 +16,7 @@ There is no public endpoint available to view the application.
 
 ### Time spent
 
-6h40m hours spent on this assignment.
+7h40m hours spent on this assignment.
 
 #### Time breakdown: 
 
@@ -30,6 +30,7 @@ There is no public endpoint available to view the application.
 ** 30 mins: sketching on paper
 ** 1h30m: digitizing it on draw.io and exporting a PNG file.
 * Rollout Plan: 5min (see "What did you not include" section, bulletpoint 2)
+* Documentation and other polishing: 1h
 
 ### Assumptions made
 
@@ -42,6 +43,7 @@ There is no public endpoint available to view the application.
 * I would have liked to create the Docker image using `scratch` or Alpine because the resulting image was very large (~1GB), meaning AutoScaling scale-out events could become a source of timing frustration.
 * I would have liked to split the Docker image into build steps, making the resulting Docker image much smaller.  For instance, I don't need a lot of the tooling around compiling code once the container has been created, so it's just cruft that takes up disk space.
 * I tried to get the rate limiting working with Nginx but something isn't working, so I ripped it out of docker-compose and kept the nginx config.  I'm sure with enough time I would have figured it out.
+* I would not work on `master` branch normally.  Instead, I would make small feature-related PRs and then push them for review and subsequent merging after approval.
 
 ### Stretch goals attempted
 
