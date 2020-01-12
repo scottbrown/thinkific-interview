@@ -1,5 +1,7 @@
 # README
 
+**Test Submission Document is located [here](README.submission.md).**
+
 This is an example application to be used for DevOps technical challenges. It is
 a simple REST api that implements the technical challenge found in this folder.
 
