@@ -21,14 +21,14 @@ There is no public endpoint available to view the application.
 #### Time breakdown: 
 
 * Dockerizing app: 
-** 2h30m: writing Docker image
-** ~1h00m: total time spent recreating the Docker image
+  * 2h30m: writing Docker image
+  * ~1h00m: total time spent recreating the Docker image
 * Adding functionality: 35m
-** Caching functionality would be handled by CloudFront (see architecture diagram) by caching the GET requests, varying on specific API_KEY headers (or something similar).  This offloads caching and processing to CloudFront and frees up the app server for more expensive workloads.  We would need to tweak the cache to ensure freshness, but it could work.
-** See note on shortcuts about rate limiting
+  * Caching functionality would be handled by CloudFront (see architecture diagram) by caching the GET requests, varying on specific API_KEY headers (or something similar).  This offloads caching and processing to CloudFront and frees up the app server for more expensive workloads.  We would need to tweak the cache to ensure freshness, but it could work.
+  * See note on shortcuts about rate limiting
 * Architecture diagram
-** 30 mins: sketching on paper
-** 1h30m: digitizing it on draw.io and exporting a PNG file.
+  * 30 mins: sketching on paper
+  * 1h30m: digitizing it on draw.io and exporting a PNG file.
 * Rollout Plan: 5min (see "What did you not include" section, bulletpoint 2)
 * Documentation and other polishing: 1h
 
@@ -53,18 +53,18 @@ There is no public endpoint available to view the application.
 ### Instructions to run assignment locally
 
 * Unzip package into directory
-** This creates a directory called `foo`
+  * This creates a directory called `foo`
 * Change directory (`cd`) in newly-created directory
-** e.g. `cd foo`
+  * e.g. `cd foo`
 * Start all services by running `[sudo] docker-compose up`
-** The services are live, but the database is empty.
+  * The services are live, but the database is empty.
 * Find the `app` Docker container
-** Use `[sudo] docker ps`.  Its name will be something like devops-autoincrementing-integers-101_app`
+  * Use `[sudo] docker ps`.  Its name will be something like devops-autoincrementing-integers-101_app`
 * Enter the running Docker container by running `[sudo] docker exec -it CONTAINER_NAME bash`
-** where `CONTAINER_NAME` is the name of the running Docker container from the previous step.
+  * where `CONTAINER_NAME` is the name of the running Docker container from the previous step.
 * Once inside the Docker container, create the database and run all migrations
-** Create Database with `bundle exec rails db:create`
-** Run migrations with `bundle exec rails db:migrate RAILS_ENV=development`
+  * Create Database with `bundle exec rails db:create`
+  * Run migrations with `bundle exec rails db:migrate RAILS_ENV=development`
 * Open http://localhost in your Web browser
 
 ### What did you not include in your solution that you want us to know about?
