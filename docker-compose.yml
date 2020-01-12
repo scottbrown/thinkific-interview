@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+# FIXME: looks like config issue
+# ratelimiter:
+#   image: nginx:1.17.7
+#   ports:
+#     - 80
+#   volumes:
+#     - ./nginx/ratelimit.conf:/etc/nginx/conf.d/ratelimit.conf
+#   restart: always
+#   depends_on:
+#     - app
+  db:
+    image: postgres:11.5-alpine
+    environment:
+      POSTGRES_USER: postgres
+    volumes:
+      - ./tmp/thinkific/db/data:/var/lib/postgresql/data
+  app:
+    build: .
+    image: app
+    ports:
+      - 80:80
+    depends_on:
+      - db
