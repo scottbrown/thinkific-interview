@@ -18,7 +18,7 @@ There is no public endpoint available to view the application.
 
 6h40m hours spent on this assignment.
 
-Time breakdown: 
+#### Time breakdown: 
 
 * Dockerizing app: 
 ** 2h30m: writing Docker image
@@ -73,13 +73,15 @@ Time breakdown:
 
 ### Other information about your submission that you feel it's important that we know if applicable.
 
+n/a
+
 ### Your feedback on this technical challenge.
 
 This is an interesting request because there's a power dynamic here.  You are asking for feedback and some of that may be viewed as a criticism, but that could jeopardize my candidacy for this position.  At this point, it is difficult to know if there would be consequences for my honesty since a rejection is often simply a "No" without further explanation.
 
 However, I do believe in open and honest communcation so I will provide a few pieces of feedback.  I also believe that when applying for senior level positions or higher, there are expectations that interviewers want to see respectful criticism and/or pushback with explanations.
 
-Overall, this assignment suffers from time and effort constraints.   Completing the tasks takes more than the allotted 4-6 hours and the burden is placed on the candidate and not on Thinkific.  There is the feeling of being rushed, which I don't like because the words "production-grade" and "as detailed as possible" are being used to denote quality.  This does not simulate a real-world scenario because in a real environment pairing and help would be welcomed and if an employer wants to evaluate solving real challenges then they would be there with the candidate through the process.  While stated otherwise in the caveat, the type of tasks being requested and the request of "production-grade" quality leads me to believe candidate submissions could be used to solicit free work.
+Overall, this assignment suffers from time and effort constraints.   Completing the tasks takes more than the allotted 4-6 hours and the burden is placed on the candidate and not on Thinkific; I prefer to see more of an equal expenditure.  There is the feeling of being rushed, which I don't like because the words "production-grade" and "as detailed as possible" are being used to denote quality.  This does not simulate a real-world scenario because in a real environment pairing and help would be welcomed and if an employer wants to evaluate solving real challenges then they would be there with the candidate through the process.  While stated otherwise in the caveat, the type of tasks being requested and the request of "production-grade" quality leads me to believe candidate submissions could be used to solicit free work.
 
 I like how this is looks like a real-world request as opposed to a toy project that some employers give.  This is a good thing.  However, where it goes wrong is that it is evaluating the candidate in all the wrong ways.  There is no point to evaluate the candidate's Docker skill set by having them wait and iterate on a docker image, but rather by creating a simple Docker image -- pull an official image, install some libraries -- or explaining to an interviewer what a given sample Dockerfile would do.  I would also like to see a greater emphasis on security as running arbitrary code as well as storage of an SSL private key in a Docker container is not advisable from a security perspective.
 
